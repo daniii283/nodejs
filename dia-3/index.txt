@@ -1,4 +1,13 @@
 callback
+    functio cuadrados(v){
+        retrun v*v
+    }
+    [1,2,3].map(v=>v*v)
+    [1,2,3].map(cuadrados)
+    Pasar como argumento una funcion a otra funcion
+        1. Es una funcioón flecha no pierde ambito
+        2. Es un function pierde el ambito
+    https://developer.mozilla.org/es/docs/Glossary/Callback_function
 clousures
 modules
 typescript

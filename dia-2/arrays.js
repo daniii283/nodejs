@@ -12,3 +12,15 @@ a.filter(v=>v%2===0).map(v=>v*v).reduce((a,v)=>a+v,100)
     //101*1+2*2=a
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
+const set = new Set([1,2,3,4,5,4,3]) 
+const resultSet = [...set] //[1,2,3,4,5]
+
+//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Set
+
+const map = new Map()
+map.set('key',10)
+map.get('key')
+
+//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Map
+//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/WeakMap
