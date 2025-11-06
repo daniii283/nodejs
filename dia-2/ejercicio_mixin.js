@@ -59,6 +59,16 @@ function inherit(Base = class { }) {
     return new Mixins(Base)
 }
 
+
+ function applyMixins(derivedCtor, constructors) {
+    constructors.forEach((baseCtor) => {
+        Object.getOwnPropertyNames(baseCtor.prototype).forEach((name) => {
+            Object.defineProperty(derivedCtor.prototype, name, Object.getOwnPropertyDescriptor(baseCtor.prototype, name) ||
+                Object.create(null));
+        });
+    });
+}
+
 /*
 Demostramos que todos los datos de js heredean de object?
 1 es object si

@@ -45,4 +45,7 @@ typescript
         https://www.typescriptlang.org/docs/handbook/mixins.html
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
     decorators
+        POA(Programación orientada a aspectos)
+        Metadatos
+        https://www.typescriptlang.org/docs/handbook/decorators.html
 node
