@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a <%= title %></h1>
+    <h2>Lista de Productos</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+        </tr>
+        <% productos.forEach(producto => { %>
+        <tr>
+            <td><%= producto.id %></td>
+            <td><%= producto.nombre %></td>
+            <td>$<%= producto.precio %></td>
+        </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
